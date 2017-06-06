@@ -14,9 +14,8 @@ class SongSelector extends React.Component {
       return <option value={index} key={index}>{song.title.label}</option>
     });
 // console.log("options", options)
-
     return (
-      <select id="songs" onChange={this.handleChange} value={this.state.selectedIndex}>Songs here
+      <select id="songs" onChange={this.handleChange} value={this.state.selectedIndex}>
         {options}
       </select>
     );

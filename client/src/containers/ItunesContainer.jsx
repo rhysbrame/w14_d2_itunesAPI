@@ -1,6 +1,6 @@
 import React from 'react';
 import SongSelector from '../components/SongSelector';
-// import CountryDetail from '../components/CountryDetail';
+import SongDetail from '../components/SongDetail';
 
 class ItunesContainer extends React.Component {
   constructor(props){
@@ -17,6 +17,7 @@ class ItunesContainer extends React.Component {
       <div>
         <h2>iTunes Container</h2>
         <SongSelector songs={this.state.songs} onSelectSong={this.setSelectedSong}/>
+        <SongDetail song={this.state.selectedSong}/>
       </div>
     );
   }
