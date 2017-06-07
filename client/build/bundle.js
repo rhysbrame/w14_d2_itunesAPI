@@ -9689,19 +9689,13 @@ var SongDetail = function (_React$Component) {
         'div',
         null,
         _react2.default.createElement(
-          'h3',
-          null,
-          'Song: ',
-          this.props.song.title.label
-        ),
-        _react2.default.createElement(
-          'h3',
+          'h2',
           null,
           'Artist: ',
           this.props.song['im:artist'].label
         ),
         _react2.default.createElement(
-          'h3',
+          'h2',
           null,
           'Title: ',
           this.props.song['im:name'].label
@@ -9711,6 +9705,13 @@ var SongDetail = function (_React$Component) {
           null,
           'Genre: ',
           this.props.song.category.attributes.label
+        ),
+        _react2.default.createElement('img', { src: this.props.song['im:image'][2].label }),
+        _react2.default.createElement(
+          'h3',
+          null,
+          'Song: ',
+          this.props.song.title.label
         ),
         _react2.default.createElement('audio', { controls: 'controls',
           source: true, src: this.props.song.link[1].attributes.href, type: 'audio/mp4' })
